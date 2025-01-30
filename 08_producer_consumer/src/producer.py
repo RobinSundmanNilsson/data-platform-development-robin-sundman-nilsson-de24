@@ -10,6 +10,7 @@ with open(data_path / "jokes.json", "r") as file:
 
 # pprint(jokes)
 
+# a form of entry point for interacting with Kafka, localhost:9092 is port mapped to broker container
 app = Application(broker_address="localhost:9092", consumer_group="text-splitter")
 
 jokes_topic = app.topic(name="jokes", value_serializer="json")
