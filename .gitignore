@@ -175,3 +175,6 @@ cython_debug/
 
 # ignore kafka_data
 kafka_data
+
+# ignore state
+state
