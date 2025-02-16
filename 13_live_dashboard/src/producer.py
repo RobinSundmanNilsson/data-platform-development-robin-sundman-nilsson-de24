@@ -42,7 +42,7 @@ def main():
 
             producer.produce(topic=coins_topic.name, key=kafka_message.key, value=kafka_message.value)
 
-            time.sleep(10)
+            time.sleep(30)
 
 
 if __name__ == "__main__":
